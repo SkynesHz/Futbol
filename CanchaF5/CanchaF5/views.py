@@ -4,6 +4,7 @@ from django.template import Template, Context
 from django.template import loader
 #from django.template.loader import get_template
 from django.shortcuts import render
+from django.contrib.auth.forms import UserCreationForm
 
 class Persona(object):
     def __init__(self, nombre, apellido):
@@ -70,3 +71,9 @@ def home(request):
 
 def ubicacion(request):
     return render(request, "ubicacion.html")
+
+def registro(request):
+    return render(request, "registrarse.html")
+
+def inicioSesion(request):
+    return render(request, 'iniciar.html')

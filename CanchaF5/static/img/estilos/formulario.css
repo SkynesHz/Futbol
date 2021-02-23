@@ -1,0 +1,35 @@
+body{
+    background: url(../fondo.jpg) no-repeat center center fixed;
+    background-size: cover; 
+}
+
+.form-group{
+    padding-bottom: 1px;
+}
+
+.main-section{
+    margin: 0 auto;
+    margin-top: 1%;
+    padding: 0;
+}
+
+.modal-content{
+    background-color: #2A2D2A;
+    opacity: .95;
+    padding: 0 20px;
+}
+
+.user-img{
+    margin-top: -50px;
+    margin-bottom: 35px;
+}
+
+.user-img img{
+    width: 100px;
+    height: 100px;
+}
+
+button{
+    width: 60%;
+    margin: 5px 0 5px;
+}

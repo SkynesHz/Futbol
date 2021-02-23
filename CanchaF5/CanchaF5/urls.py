@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from CanchaF5.views import saludo
-from CanchaF5.views import despedida, dameFecha, calculaEdad, CursoJava, home, ubicacion
+from CanchaF5.views import despedida, dameFecha, calculaEdad, CursoJava, home, ubicacion, registro, inicioSesion
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -27,4 +27,6 @@ urlpatterns = [
     path('CursoJava/', CursoJava),
     path('Home/', home),
     path('Ubicacion/', ubicacion),
+    path('Registro/', registro),
+    path('InicioSesion/', inicioSesion),
 ]

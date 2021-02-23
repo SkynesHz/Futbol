@@ -1,0 +1,48 @@
+{% load static %}
+<html>
+
+<head>
+    <title>
+        {% block title %} {%endblock %}
+    </title>
+    <link rel="shortcut icon" type="image/png" href='{% static "/img/logito.png" %}'/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container" style="text-align: center;"><h1>CanchaF5</h1></div>
+
+    <div class="cotainer">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand">
+                <img src='{% static "/img/logito.png" %}' height="40px">
+            </a>
+            <button class="navbar-toggler" data-target="menu" data-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav mr-auto">
+                    <li class="navbar-item"><a href="http://127.0.0.1:8000/Home/" class="nav-link">Home</a></li>
+                    <li class="navbar-item"><a href="https://translate.google.com/?hl=es&sl=en&tl=es&op=translate" class="nav-link">Quienes Somos</a></li>
+                    <li class="navbar-item"><a href="http://127.0.0.1:8000/Ubicacion/" class="nav-link">Ubicación</a></li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse 2-100 order-3 dual-collapse2">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Iniciar Sesión</a></li>
+                </ul>
+            </div>
+                
+        </nav>
+    </div>
+    
+
+    {% block content %} {% endblock %}
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+{% extends "header.html" %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% block title %} Ubicación {% endblock %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        
+    </head>
+    <body>
+        {% block content %}
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.796246451829!2d-58.99429804986227!3d-27.44446002211555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94450c60e0f8e1c9%3A0x58a1b602009d7b23!2sMarcelo%20T.%20de%20Alvear%20745%2C%20H3500ACO%20Resistencia%2C%20Chaco!5e0!3m2!1ses!2sar!4v1614022233811!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        {% endblock %}
+    </body>
+</html>
